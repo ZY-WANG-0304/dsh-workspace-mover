@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Workspace mover",
+    "description": "Move a session into another workspace from its row menu or by dragging the row onto another workspace group. Session logs, files and running work are untouched.",
+    "detail": "docs/DETAIL.md"
+  }
+}

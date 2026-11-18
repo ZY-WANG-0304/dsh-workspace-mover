@@ -1,0 +1,62 @@
+{
+  "name": "dsh-workspace-mover",
+  "version": "0.2.2",
+  "type": "module",
+  "description": "Move sessions between workspaces in the DSH sidebar, by menu or by drag and drop.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "workspace",
+    "sessions",
+    "drag-and-drop"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZY-WANG-0304/dsh-workspace-mover.git"
+  },
+  "homepage": "https://github.com/ZY-WANG-0304/dsh-workspace-mover#readme",
+  "bugs": {
+    "url": "https://github.com/ZY-WANG-0304/dsh-workspace-mover/issues"
+  },
+  "scripts": {
+    "test": "node test/host.test.mjs && node test/client.test.mjs"
+  }
+}
