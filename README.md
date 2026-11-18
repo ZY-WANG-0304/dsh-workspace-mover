@@ -1,5 +1,7 @@
 # dsh-workspace-mover
 
+[![test](https://github.com/ZY-WANG-0304/dsh-workspace-mover/actions/workflows/test.yml/badge.svg)](https://github.com/ZY-WANG-0304/dsh-workspace-mover/actions/workflows/test.yml)
+
 Move DSH sessions between workspaces — from the session row menu, or by dragging
 the row onto another workspace group in the sidebar.
 
